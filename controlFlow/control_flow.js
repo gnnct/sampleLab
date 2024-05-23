@@ -49,3 +49,25 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+let orgRole = "Employee";
+let accessTo;
+
+switch (orgRole) {
+    case "Employee":
+        accessTo = "Dietary Services";
+        break;
+    case "Enrolled Member":
+        accessTo = "Dietary Services and one-on-one";
+        break;
+    case "Subscriber":
+        accessTo = "Partial Dietary Services";
+        break;
+    case "Non-Subscriber":
+        accessTo = "Please enrol.";
+        break;
+    default:
+        accessTo = "Unknown role. No access.";
+}
+console.log("Access To:", accessTo);
+
