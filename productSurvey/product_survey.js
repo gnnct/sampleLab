@@ -1,6 +1,15 @@
 function submitFeedback() {
     
-    alert('Thank you for your valuable feedback')
+    const username = document.getElementById('name').value;
+    const age = document.getElementById('age').value;
+    const email = document.getElementById('email').value;
+    const job = document.getElementById('job').value;
+    const designation = document.getElementById('designation').value;
+    const productType = document.getElementById('productType').value;
+    const feedback = document.getElementById('feedbackText').value;
+    const expereience = document.getElementById('expereience').value;
+
+    alert(`Thank you for your valuable feedback ${username}!`)
 
     document.getElementById('userName').innerHTML = username;
     document.getElementById('userAge').innerHTML = age;
@@ -9,16 +18,10 @@ function submitFeedback() {
     document.getElementById('userDesignation').innerHTML = designation;
     document.getElementById('userProductChoice').innerHTML = productType;
     document.getElementById('userFeedback').innerHTML = feedback;
+    document.getElementById('userExperience').innerHTML = expereience;
 
     document.getElementById('userInfo').style.display = 'block';
 }
-const username = document.getElementById('name').value;
-const age = document.getElementById('age').value;
-const email = document.getElementById('email').value;
-const job = document.getElementById('job').value;
-const designation = document.getElementById('designation').value;
-const productType = document.getElementById('productType').value;
-const feedback = document.getElementById('feedbackText').value;
 
 const submitButton=document.getElementById('submitBtn');
 
